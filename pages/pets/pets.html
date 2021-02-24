@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pets/pets.css">
+    <title>Our pets</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    
+  <h1 class="visuallyhidden">Cozy House</h1>
+  <header class="header">
+    <div class="wrapper">
+      <div class="logo">
+        <div class="logo__title">
+          Cozy House
+        </div>
+        <div class="logo__subtitle">
+          Shelter for pets in Boston
+        </div>
+      </div>
+      <input
+        class="burger"
+        type="checkbox"
+        id="mobile-toggle">
+      <label
+        class="hamburger"
+        id="mobile-toggle-btn"
+        for="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="menu">
+<!--  ------------------------------>
+        <div class="logo-burger">
+          <div class="logo__title-burger">
+            Cozy House
+          </div>
+          <div class="logo__subtitle-burger">
+            Shelter for pets in Boston
+          </div>
+        </div>
+<!-- ------------------------------------------------ -->
+        <ul class="list">
+          <li class="list__item">
+            <a 
+              href="../main/main.html"
+              class="list__link list__link_active-shelter">
+              About the shelter
+          </a>
+            <li class="list__item">
+              <a 
+                href="../pets/pets.html"
+                class="list__link  list__link_active">
+                Our pets
+              </a>
+            </li>
+            <li class="list__item">
+              <a
+                href="#"
+                class="list__link list__link_disabled">
+                Help the shelter
+              </a>
+            </li>
+            <li class="list__item">
+              <a
+                href="#"
+                class="list__link list__link_disabled">
+                Contacts
+              </a>
+            </li>          
+        </ul>
+      </nav>
+    </div>
+    <div class="header__blackout"></div>
+  </header>
+  
+    <main>
+      <section class="friends">
+        <div class="wrapper">
+          <div class="friends__inner">
+            <h2 class="friends_title">
+              Our friends who are&nbsp;looking for a  house
+            </h2>
+            <div class="friends__section">
+              <ul class="friends__list"></ul>
+            </div>
+            <div class="friends__pagination">
+              <button class="pagination__button first-arrow">
+                &lt;&lt;
+              </button>
+              <button class="pagination__button left-arrow">
+                &lt;
+              </button>
+              <button class="pagination__button current-page pagination__active">
+                1
+              </button>
+              <button class="pagination__button right-arrow">
+                &gt;
+              </button>
+              <button class="pagination__button last-arrow">
+                &gt;&gt;
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+     <!-- ===============FOOTER SECTION============================== -->
+  <footer class="footer">
+    <div class="wrapper wrapper__container">
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__item">
+            <h3 class="footer__title">
+              <span>
+                For questions
+              </span>
+              <span>
+                and suggestions
+              </span>
+            </h3>
+            <ul>
+              <li class="footer__contact">        
+                <img
+                  class="footer__icon--contact"
+                  src="../../assets/images/mail.png"
+                  alt="">      
+                  <a 
+                    href="mailto:email@shelter.com" 
+                    class="footer__link">
+                    email@shelter.com
+                  </a>
+              </li>
+              <li class="footer__contact">
+                <img
+                  class="footer__icon--contact"
+                  src="../../assets/images/phone.png"
+                  alt="">
+                  <a 
+                    href="tel:+13 674 567 75 54"
+                    class="footer__link">
+                    +13 674 567 75 54
+                  </a>
+              </li>  
+            </ul>
+          </div><!--/footer__item  -->
+  
+          <div class="footer__item-rows">
+            <h3 class="footer__title">
+              <span>
+                We are waiting
+              </span>              
+              <span>
+                for your visit
+              </span>
+            </h3>
+            <ul>
+              <li class="footer__local">
+                <img
+                  class="footer__icon"
+                  src="../../assets/images/pin.png"
+                  alt="">
+                <a 
+                  href="https://goo.gl/maps/mAononty1Y4QhEdH6"
+                  class="footer__link-local">
+                  1 Central Street, Boston<br>
+                  (entrance from the store)
+                </a>
+              </li>
+              <li class="footer__local">
+                <img
+                  class="footer__icon" 
+                  src="../../assets/images/pin.png"
+                  alt="">
+                <a
+                  href="https://goo.gl/maps/KWhYo7iVJ96t3vFWA" 
+                  class="footer__link-local">
+                  18 South Park, London
+                </a>
+              </li>
+            </ul>
+          </div><!--/footer__item-rows  -->
+        </div><!--/footer__content  -->
+        
+        <div class="footer__item--image">
+          <img
+            src="../../assets/images/footer-puppy.png"
+            alt="">
+        </div>
+      </div><!--/footer wrapper  -->
+    </div><!--/wrapper  -->
+  </footer>
+
+  <div id="popup" class="popup">
+    <div class="popup__blackout"></div>
+    <div class="popup__body">
+        <div class="popup__close">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.42618 6.00003L11.7046 1.72158C12.0985 1.32775 12.0985 0.689213 11.7046 0.295433C11.3108 -0.0984027 10.6723 -0.0984027 10.2785 0.295433L5.99998 4.57394L1.72148 0.295377C1.32765 -0.098459 0.68917 -0.098459 0.295334 0.295377C-0.0984448 0.689213 -0.0984448 1.32775 0.295334 1.72153L4.57383 5.99997L0.295334 10.2785C-0.0984448 10.6723 -0.0984448 11.3108 0.295334 11.7046C0.68917 12.0985 1.32765 12.0985 1.72148 11.7046L5.99998 7.42612L10.2785 11.7046C10.6723 12.0985 11.3108 12.0985 11.7046 11.7046C12.0985 11.3108 12.0985 10.6723 11.7046 10.2785L7.42618 6.00003Z" fill="#292929"/>
+            </svg> 
+        </div>
+        <div class="popup__content"></div>
+    </div>
+</div>
+  <script src="pets.js"></script>
+</body>
+</html>
